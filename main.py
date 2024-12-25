@@ -7,6 +7,8 @@ app = Flask(__name__)
 
 
 def circle_square(r):
+    if r < 0:
+        return 0
     return math.pi * (r ** 2)
 
 
